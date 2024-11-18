@@ -12,7 +12,7 @@ export const Counter = () => {
   return (
     <>
       <h3>
-        Contador: <small className="font-bold">{count}</small>
+        Contador in new brach: <small className="font-bold">{count}</small>
       </h3>
 
       <div>
