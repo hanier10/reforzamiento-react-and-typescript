@@ -6,7 +6,8 @@ export const Counter = () => {
   return (
     <>
       <h3>
-        Contador in new brach v2: <small className="font-bold">{count}</small>
+        Contador in new brach v2 2025:{" "}
+        <small className="font-bold">{count}</small>
       </h3>
 
       <div>
