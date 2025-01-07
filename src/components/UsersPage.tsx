@@ -1,7 +1,12 @@
 import React from "react";
 import { UserRow } from "./UserRow";
+import { useUsers } from "../hooks/useUsers";
 
 export const UsersPage = () => {
+  const { users } = useUsers();
+
+  console.log(users);
+
   return (
     <>
       <h3>Usuarios:</h3>
