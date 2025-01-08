@@ -1,16 +1,24 @@
-import React from "react";
+import { User } from "../interfaces/reqres.response";
 
-export const UserRow = () => {
+interface Props {
+  user: User;
+}
+
+export const UserRow = ({ user }: Props) => {
   return (
     <tr className="p-2">
       <td>
-        <img src="" className="rounded-full w-14" alt="User Avatar" />
+        <img
+          src={user.avatar}
+          className="rounded-full w-14 p-2"
+          alt="User Avatar"
+        />
       </td>
 
       <td>
-        {"Hanier"} {"Morales"}
+        {user.first_name} {user.last_name}
       </td>
-      <td>{"hsmp16@gmail.com"}</td>
+      <td>{user.email}</td>
     </tr>
   );
 };
